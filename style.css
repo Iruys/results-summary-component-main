@@ -74,7 +74,7 @@ body{
     }
     
     .card .row {
-        max-width: 700px; 
+        max-width: 375px; 
     }
     .card .row .content{
         display: block;
@@ -82,6 +82,15 @@ body{
         box-shadow: 0px 5px 10px hsl(240, 64%, 85%);
         border-radius: 15px;
     }
+
+    .card .right-side .row-2 .main-content .reaction .side .bold{
+        color: black;
+      padding-left: 99px;
+   }
+
+   .card .right-side .row-2 .main-content .memory .side .bold{
+    color: black;
+  padding-left: 103px;
 }
 
 
