@@ -66,7 +66,11 @@ body{
     grid-template-columns: repeat(2,1fr);
 
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
+    body {
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+      }
     body{
         font-size: 18px;
         font-family: 'Hanken Grotesk', sans-serif;
@@ -74,7 +78,7 @@ body{
     }
     
     .card .row {
-        max-width: 375px; 
+        max-width: 425px; 
     }
     .card .row .content{
         display: block;
@@ -90,9 +94,31 @@ body{
 
    .card .right-side .row-2 .main-content .memory .side .bold{
     color: black;
-  padding-left: 103px;
+   padding-left: 105px;
+}
+.card .right-side .row-2 .main-content .reaction{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 47%, 96%);
+    border-radius: 5px;
+   align-items: center;
+   padding: 41px 10px;
+   gap: 2px;
 }
 
+.card .left-side .circle{
+    background-image: linear-gradient(to bottom,rgb(37, 37, 150) ,rgb(4, 0, 255));
+    background-color:rgba(61, 58, 212, 0.952);
+    margin: 0 auto;
+    width: 158px;
+    padding: 41px 48px;
+    border-radius: 171px;
+    margin-bottom: 40px;
+    
+}
+}
 
 .card .left-side{
     background-color:hsl(241, 81%, 54%);
@@ -209,7 +235,7 @@ padding-top: 10px;
 }
 .card .right-side .row-2 .main-content .memory .side .bold{
     color: black;
-  padding-left: 99px;
+  padding-left: 105px;
 }
 .card .right-side .row-2 .main-content .memory .side .bold span{
     color: rgb(136, 133, 133);
@@ -232,7 +258,7 @@ padding-top: 10px;
 }
 .card .right-side .row-2 .main-content .verbal .side .bold{
     color: black;
-  padding-left: 99px;
+  padding-left: 119px;
 }
 .card .right-side .row-2 .main-content .verbal .side .bold span{
     color: rgb(136, 133, 133);
@@ -254,7 +280,7 @@ padding-top: 10px;
 }
 .card .right-side .row-2 .main-content .visual .side .bold{
     color: black;
-  padding-left: 99px;
+  padding-left: 119px;
 }
 .card .right-side .row-2 .main-content .visual .side .bold span{
     color: rgb(136, 133, 133);
