@@ -1,0 +1,266 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+ 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+.card .row {
+    max-width: 700px; 
+}
+.card .row .content{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px hsl(240, 64%, 85%);
+    border-radius: 15px;
+    flex-wrap:flex;
+    margin: 50px auto;
+    grid-template-columns: repeat(2,1fr);
+
+}
+@media screen and (max-width:720px) {
+    body{
+        font-size: 18px;
+        font-family: 'Hanken Grotesk', sans-serif;
+        display: block;
+    }
+    
+    .card .row {
+        max-width: 700px; 
+    }
+    .card .row .content{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 5px 10px hsl(240, 64%, 85%);
+        border-radius: 15px;
+    }
+}
+
+
+.card .left-side{
+    background-color:hsl(241, 81%, 54%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    text-align: center;
+    padding: 45px 0px;
+
+
+    
+} .card .left-side h5{
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.card .left-side .circle{
+    background-image: linear-gradient(to bottom,rgb(37, 37, 150) ,rgb(4, 0, 255));
+    background-color:rgba(61, 58, 212, 0.952);
+    margin: 0 auto;
+    width: 158px;
+    padding: 29px 48px;
+    border-radius: 171px;
+    margin-bottom: 40px;
+    
+}
+.card .left-side .circle h1{
+    font-size: 50px;
+}
+.card .left-side .circle h6{
+    color:hsl(241, 100%, 89%);
+}
+.card .left-side h2{
+    
+    font-size: 25px;
+    margin-bottom: 27px;
+}
+
+.card .left-side p{
+    margin: 0 auto;
+    padding: 0 40px;
+    color:hsl(241, 100%, 89%);
+}
+
+
+
+.card .right-side{
+    color: hsl(0, 0%, 0%);
+    padding: 20px 20px;
+    gap: 12px;
+}
+.card .right-side .row-2{
+    display: grid;
+    grid-template-rows: 6,1fr;
+    gap:1em;
+    padding: 10px;
+}
+
+.card .right-side .title{
+font-weight: bold;
+color: hsl(224, 30%, 27%);
+display: grid;
+padding-top: 10px;
+
+   
+}
+.card .right-side .row-2 .main-content{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap:18px;
+    
+    
+    
+}
+.card .right-side .row-2 .main-content .reaction{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 47%, 96%);
+    border-radius: 5px;
+   align-items: center;
+   padding: 10px;
+   gap: 2px;
+}
+.card .right-side .row-2 .main-content .reaction .side{
+    gap:10px
+}
+.card .right-side .row-2 .main-content .reaction .side .bold{
+    color: black;
+  padding-left: 99px;
+}
+.card .right-side .row-2 .main-content .reaction .side .bold span{
+    color: rgb(136, 133, 133);
+}
+
+.card .right-side .row-2 .main-content .reaction .rct{
+    display: flex;
+}
+
+
+
+.card .right-side .row-2 .main-content .memory{
+    display: flex;
+    flex-wrap: wrap;
+    color:hsl(39, 100%, 56%);
+    background-color: hsl(42, 57%, 95%);
+    border-radius: 5px;
+    padding: 10px;
+    gap: 2px;
+    
+}
+.card .right-side .row-2 .main-content .memory .side{
+    gap:10px
+}
+.card .right-side .row-2 .main-content .memory .side .bold{
+    color: black;
+  padding-left: 99px;
+}
+.card .right-side .row-2 .main-content .memory .side .bold span{
+    color: rgb(136, 133, 133);
+}
+
+
+
+.card .right-side .row-2 .main-content .verbal{
+    display: flex;
+    flex-wrap: wrap;
+    color:hsl(166, 100%, 37%);
+    background-color: hsl(165, 46%, 95%);
+    border-radius: 5px;
+    padding: 10px;
+    gap: 2px;
+    
+}
+.card .right-side .row-2 .main-content .verbal .side{
+    gap:10px
+}
+.card .right-side .row-2 .main-content .verbal .side .bold{
+    color: black;
+  padding-left: 99px;
+}
+.card .right-side .row-2 .main-content .verbal .side .bold span{
+    color: rgb(136, 133, 133);
+}
+
+
+.card .right-side .row-2 .main-content .visual{
+    display: flex;
+    flex-wrap: wrap;
+    color:hsl(234, 85%, 45%);
+    background-color: hsl(235, 39%, 94%);
+    border-radius: 5px;
+    padding: 10px;
+    gap: 2px;
+    
+}
+.card .right-side .row-2 .main-content .visual .side{
+    gap:10px
+}
+.card .right-side .row-2 .main-content .visual .side .bold{
+    color: black;
+  padding-left: 99px;
+}
+.card .right-side .row-2 .main-content .visual .side .bold span{
+    color: rgb(136, 133, 133);
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    padding: 10px ;
+    border-radius: 48px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:hsl(234, 85%, 45%); ;
+}
+
